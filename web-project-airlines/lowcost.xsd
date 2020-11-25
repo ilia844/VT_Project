@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://techprimers.com/spring-boot-soap-example" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="LowCostAirlines" type="spr:LowCostAirlinesType" xmlns:spr="http://techprimers.com/spring-boot-soap-example"/>
+  <xs:complexType name="pilotType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Jack"/>
+            <xs:enumeration value="Mark"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="lastName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Lop"/>
+            <xs:enumeration value="Lutz"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="workExperience"/>
+      <xs:element type="xs:string" name="jobDescription"/>
+      <xs:element type="xs:string" name="salary"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="stewardType">
+    <xs:sequence>
+      <xs:element name="name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Mike"/>
+            <xs:enumeration value="Andrew"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="lastName">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="Bee"/>
+            <xs:enumeration value="Gale"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element type="xs:string" name="workExperience"/>
+      <xs:element type="xs:string" name="jobDescription"/>
+      <xs:element type="xs:string" name="salary"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="aircraftType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="model"/>
+      <xs:element type="xs:string" name="seatAmount"/>
+      <xs:element type="xs:string" name="tankCapacity"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="lowCostAirlineTripsType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="category"/>
+      <xs:element type="spr:pilotType" name="pilot" xmlns:spr="http://techprimers.com/spring-boot-soap-example"/>
+      <xs:element type="spr:stewardType" name="steward" xmlns:spr="http://techprimers.com/spring-boot-soap-example"/>
+      <xs:element type="spr:aircraftType" name="aircraft" xmlns:spr="http://techprimers.com/spring-boot-soap-example"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="id" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="LowCostAirlinesType">
+    <xs:sequence>
+      <xs:element type="spr:lowCostAirlineTripsType" name="lowCostAirlineTrips" maxOccurs="unbounded" minOccurs="0" xmlns:spr="http://techprimers.com/spring-boot-soap-example"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

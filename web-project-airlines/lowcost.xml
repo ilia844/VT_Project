@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LowCostAirlines>
+    <lowCostAirlineTrips id="16">
+        <category>Middle</category>
+        <pilot id="1">
+            <name>Mark</name>
+            <lastName>Lutz</lastName>
+            <workExperience>200</workExperience>
+            <jobDescription>Pilot</jobDescription>
+            <salary>100.0</salary>
+        </pilot>
+        <steward id="2">
+            <name>Andrew</name>
+            <lastName>Gale</lastName>
+            <workExperience>200</workExperience>
+            <jobDescription>Steward</jobDescription>
+            <salary>100.0</salary>
+        </steward>
+        <aircraft id="3">
+            <model>Airbus</model>
+            <seatAmount>200</seatAmount>
+            <tankCapacity>5050</tankCapacity>
+        </aircraft>
+    </lowCostAirlineTrips>
+        <lowCostAirlineTrips id="12">
+            <category>Middle</category>
+            <pilot id="5">
+                <name>Jack</name>
+                <lastName>Lop</lastName>
+                <workExperience>200</workExperience>
+                <jobDescription>Pilot</jobDescription>
+                <salary>100.0</salary>
+            </pilot>
+            <steward id="6">
+                <name>Mike</name>
+                <lastName>Bee</lastName>
+                <workExperience>200</workExperience>
+                <jobDescription>Steward</jobDescription>
+                <salary>100.0</salary>
+            </steward>
+            <aircraft id="7">
+                <model>Airbus</model>
+                <seatAmount>200</seatAmount>
+                <tankCapacity>5050</tankCapacity>
+            </aircraft>
+        </lowCostAirlineTrips>
+</LowCostAirlines>

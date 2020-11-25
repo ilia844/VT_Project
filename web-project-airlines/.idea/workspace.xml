@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="lab1:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ac3ce1fb-032e-4313-8557-aae4f6ec8f86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/beans/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/common/GetStewardsCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/common/LoginCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/common/LogoutCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/connection/ConnectionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/connection/ConnectionPool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/dao/AbstractDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/dao/impl/UserDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/utils/PasswordEncoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/lab1_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/lab1_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/jackson-annotations-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/jackson-core-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/jackson-databind-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/jackson-dataformat-xml-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/jackson-module-jaxb-annotations-2.10.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-1.2-api-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-1.2-api-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-1.2-api-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-api-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-api-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-api-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-appserver-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-appserver-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-appserver-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-cassandra-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-cassandra-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-cassandra-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-core-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-core-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-core-2.12.1-tests.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-core-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-couchdb-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-couchdb-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-couchdb-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-docker-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-docker-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-docker-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-flume-ng-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-flume-ng-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-flume-ng-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-iostreams-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-iostreams-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-iostreams-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jcl-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jcl-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jcl-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jdbc-dbcp2-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jdbc-dbcp2-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jdbc-dbcp2-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jmx-gui-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jmx-gui-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jmx-gui-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jpa-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jpa-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jpa-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jul-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jul-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-jul-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-liquibase-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-liquibase-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-liquibase-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-mongodb2-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-mongodb2-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-mongodb2-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-mongodb3-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-mongodb3-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-mongodb3-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-slf4j-impl-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-slf4j-impl-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-slf4j-impl-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-slf4j18-impl-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-slf4j18-impl-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-slf4j18-impl-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-spring-cloud-config-client-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-spring-cloud-config-client-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-spring-cloud-config-client-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-taglib-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-taglib-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-taglib-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-to-slf4j-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-to-slf4j-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-to-slf4j-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-web-2.12.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-web-2.12.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/log4j-web-2.12.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/stax2-api-4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dependencies/woodstox-core-6.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lab1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/CommandType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/CommandType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/common/RegisterCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/common/RegisterCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com.lowcostairline/connection/ConnectionCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com.lowcostairline/connection/ConnectionCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/main.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/main.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/common/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/common/register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static.contents/css/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/static.contents/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/static.contents/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/lab1.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/CommandType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/CommandType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/common/GetAircraftsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/common/GetAircraftsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/common/GetPilotsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/common/GetPilotsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/common/RegisterCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lowcostairline/command/common/RegisterCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/lowcostairline/connection/ConnectionCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/lowcostairline/connection/ConnectionCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/CommandType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/CommandType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/Page.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/Page.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/common/GetAircraftsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/common/GetAircraftsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/common/GetPilotsCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/common/GetPilotsCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/common/RegisterCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/command/common/RegisterCommand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/connection/ConnectionCreator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/WEB-INF/classes/com/lowcostairline/connection/ConnectionCreator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/lab3-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Enum" />
+        <option value="jsf" />
+        <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Jsp File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/jsp/stewards.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectId" id="1V4rTzEOutx5zPOXTw2gt3jbys7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576491165626" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/jsp/common" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.lowcostairline.parsers.xml" />
+      <recent name="com.lowcostairline" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\marta\Downloads\Messenger Backend\lab1\src\main\java\com.lowcostairline\beans\aircraftCrew\steward" />
+      <recent name="C:\Users\marta\Downloads\Messenger Backend\lab1\src" />
+      <recent name="C:\Users\marta\Downloads\Messenger Backend\lab1\src\main" />
+      <recent name="C:\Users\marta\Downloads\Messenger Backend\lab1\src\main\java" />
+      <recent name="C:\Users\marta\Downloads\Messenger Backend\lab1\src\main.java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.lowcostairline" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lowcostairline.command.common" />
+      <recent name="com.lowcostairline.beans" />
+      <recent name="com.lowcostairline.exception" />
+      <recent name="com.lowcostairline.builder" />
+      <recent name="com.lowcostairline.beans.crew" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/jsp/common" />
+      <recent name="$PROJECT_DIR$/src/main/java/com.lowcostairline/connection" />
+      <recent name="$PROJECT_DIR$/src/main/java/com.lowcostairline" />
+      <recent name="$PROJECT_DIR$/src/main/java/com.lowcostairline/command/common" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 7.0.96">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lowcostairline.Main" />
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lowcostairline.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DomParserTest.parse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lowcostairline.parsers.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lowcostairline.parsers.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.lowcostairline.parsers.xml.DomParserTest" />
+      <option name="METHOD_NAME" value="parse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JaxBParserTest.parse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lowcostairline.parsers.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lowcostairline.parsers.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.lowcostairline.parsers.xml.JaxBParserTest" />
+      <option name="METHOD_NAME" value="parse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SaxParserTest.parse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lowcostairline.parsers.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.lowcostairline.parsers.xml" />
+      <option name="MAIN_CLASS_NAME" value="com.lowcostairline.parsers.xml.SaxParserTest" />
+      <option name="METHOD_NAME" value="parse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 7.0.96" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.96" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/lab1_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="lab1:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/lab1_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_lab3" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="55101" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="lab1:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="JUnit.DomParserTest.parse" />
+      <item itemvalue="JUnit.SaxParserTest.parse" />
+      <item itemvalue="JUnit.JaxBParserTest.parse" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0.96" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.DomParserTest.parse" />
+        <item itemvalue="JUnit.JaxBParserTest.parse" />
+        <item itemvalue="JUnit.SaxParserTest.parse" />
+        <item itemvalue="Application.Main (2)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ac3ce1fb-032e-4313-8557-aae4f6ec8f86" name="Default Changelist" comment="" />
+      <created>1569302262825</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569302262825</updated>
+      <workItem from="1569302267610" duration="15062000" />
+      <workItem from="1569581685244" duration="2573000" />
+      <workItem from="1569665458798" duration="3093000" />
+      <workItem from="1569777382090" duration="1246000" />
+      <workItem from="1569849011036" duration="335000" />
+      <workItem from="1570047986882" duration="13955000" />
+      <workItem from="1570565259188" duration="1712000" />
+      <workItem from="1570631731032" duration="1450000" />
+      <workItem from="1571086892721" duration="588000" />
+      <workItem from="1571460311603" duration="1553000" />
+      <workItem from="1571647869779" duration="1932000" />
+      <workItem from="1571654134901" duration="6737000" />
+      <workItem from="1571664573348" duration="25947000" />
+      <workItem from="1571740612114" duration="694000" />
+      <workItem from="1572103430315" duration="7927000" />
+      <workItem from="1573588763958" duration="564000" />
+      <workItem from="1573709486280" duration="15476000" />
+      <workItem from="1573816825126" duration="3791000" />
+      <workItem from="1573917375256" duration="10565000" />
+      <workItem from="1574001320426" duration="76000" />
+      <workItem from="1574026050705" duration="8213000" />
+      <workItem from="1574091185538" duration="11757000" />
+      <workItem from="1574160166409" duration="744000" />
+      <workItem from="1574364809623" duration="399000" />
+      <workItem from="1574672976722" duration="679000" />
+      <workItem from="1575373763083" duration="4000" />
+      <workItem from="1576000682477" duration="8843000" />
+      <workItem from="1576152663121" duration="4027000" />
+      <workItem from="1576237888978" duration="105000" />
+      <workItem from="1576238505813" duration="2667000" />
+      <workItem from="1576343185023" duration="350000" />
+      <workItem from="1576343794016" duration="18924000" />
+      <workItem from="1576419061209" duration="9999000" />
+      <workItem from="1576429085779" duration="10951000" />
+      <workItem from="1576487563566" duration="843000" />
+      <workItem from="1576523223806" duration="4897000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="JaxBParserTest_parse - 2019.12.15 at 19h 59m 33s.xml">
+      <configuration name="JaxBParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JaxBParserTest_parse - 2019.12.15 at 20h 00m 38s.xml">
+      <configuration name="JaxBParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JaxBParserTest_parse - 2019.12.15 at 20h 01m 08s.xml">
+      <configuration name="JaxBParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JaxBParserTest_parse - 2019.12.15 at 20h 02m 22s.xml">
+      <configuration name="JaxBParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="JaxBParserTest_parse - 2019.12.15 at 20h 02m 59s.xml">
+      <configuration name="JaxBParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DomParserTest_parse - 2019.12.16 at 00h 46m 16s.xml">
+      <configuration name="DomParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DomParserTest_parse - 2019.12.16 at 00h 48m 34s.xml">
+      <configuration name="DomParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DomParserTest_parse - 2019.12.16 at 00h 52m 30s.xml">
+      <configuration name="DomParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DomParserTest_parse - 2019.12.16 at 00h 52m 36s.xml">
+      <configuration name="DomParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DomParserTest_parse - 2019.12.16 at 11h 44m 26s.xml">
+      <configuration name="DomParserTest.parse" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/src/com/company/LowCostAirlines" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com.lowcostairline/dao/factory/DaoFactory.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/lowcostairline/builder/PlanBuilder.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com.lowcostairline/parsers/xml/PlanHandler.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com.lowcostairline/parsers/xml/DomParser.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="doc" />
+        <watch expression="((DeferredElementImpl)root).attributes" custom="com.sun.org.apache.xerces.internal.dom.DeferredElementImpl" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>lab1:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>lab1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>jackson-dataformat-xml-2.10.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

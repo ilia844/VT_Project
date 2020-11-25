@@ -1,0 +1,68 @@
+<LowCostAirlines>
+
+    <lowCostAirlineBlueSky id="4">
+        <name>Blue sky</name>
+        <operatingTime>200</operatingTime>
+        <category>Ultra</category>
+        <costTicket>100</costTicket>
+
+        <pilot id="1">
+            <name>Mark</name>
+            <surname>Lutz</surname>
+            <workExperience>200</workExperience>
+            <flightHours>200</flightHours>
+        </pilot>
+
+        <steward id="2">
+            <name>Andrew</name>
+            <surname>Gale</surname>
+            <workExperience>200</workExperience>
+            <gender>male</gender>
+            <height>180</height>
+            <chiefPurser>false</chiefPurser>
+        </steward>
+
+        <aircraft id="3">
+            <model>Airbus</model>
+            <seatAmount>200</seatAmount>
+            <type>low</type>
+            <fuelSupply>5000.0</fuelSupply>
+            <isluggageCompartment>false</isluggageCompartment>
+            <emergencyExitAmount>2</emergencyExitAmount>
+        </aircraft>
+
+    </lowCostAirlineBlueSky>
+
+    <lowCostAirlineAmerican id="8">
+        <name>American Portal</name>
+        <operatingTime>250</operatingTime>
+        <category>Middle</category>
+        <costTicket>200</costTicket>
+
+        <pilot id="5">
+            <name>Jack</name>
+            <surname>Lop</surname>
+            <workExperience>210</workExperience>
+            <flightHours>230</flightHours>
+        </pilot>
+
+        <steward id="6">
+            <name>Mike</name>
+            <surname>Bee</surname>
+            <workExperience>250</workExperience>
+            <gender>male</gender>
+            <height>180</height>
+            <chiefPurser>false</chiefPurser>
+        </steward>
+
+        <aircraft id="7">
+            <model>Airbus</model>
+            <seatAmount>200</seatAmount>
+            <type>low</type>
+            <fuelSupply>5050.0</fuelSupply>
+            <isluggageCompartment>false</isluggageCompartment>
+            <emergencyExitAmount>3</emergencyExitAmount>
+        </aircraft>
+    </lowCostAirlineAmerican>
+
+</LowCostAirlines>

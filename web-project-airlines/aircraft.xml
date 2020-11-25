@@ -1,0 +1,14 @@
+<aircrafts>
+    <aircraft>
+        <tankCapacity>10</tankCapacity>
+        <seatAmount>5</seatAmount>
+        <model>Airbus</model>
+        <id>1</id>
+    </aircraft>
+    <aircraft>
+        <tankCapacity>7</tankCapacity>
+        <seatAmount>10</seatAmount>
+        <model>Global</model>
+        <id>2</id>
+    </aircraft>
+</aircrafts>
